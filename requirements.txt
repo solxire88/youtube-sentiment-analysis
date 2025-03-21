@@ -4,3 +4,4 @@ transformers
 pandas
 plotly
 google-api-python-client
+torch

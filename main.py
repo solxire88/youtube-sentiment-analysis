@@ -112,7 +112,7 @@ def fetch_youtube_comments(video_id):
 
 @st.cache_data
 def sentiment_analysis():
-    return pipeline("sentiment-analysis")
+    return pipeline("sentiment-analysis",model="distilbert-base-uncased-finetuned-sst-2-english")
 
 
 def analyze_comments(comments, sentiment_pipe):
